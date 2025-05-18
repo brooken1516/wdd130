@@ -6,12 +6,10 @@
 
 :root {
     --nav-background-color: darkblue;
-    --nav-border-bottom: goldenrod;
+    --border: rgb(219, 113, 205);
     --nav-text-color: skyblue;
     --aside-background-color: lightblue;
     --aside-text-color: black;
-    --aside-border-color: goldenrod;
-    --footer-border-top: goldenrod;
     --text-color: black;
     --main-background-color: white;
     --box-shadow-color: gray;
@@ -22,8 +20,8 @@ nav {
     padding: 10px;
     color: var(--nav-text-color);
     background-color: var(--nav-background-color);
-    border-top: 5px dotted var(--footer-border-top);
-    border-bottom: 5px dotted var(--nav-border-bottom);
+    border-top: 5px dotted var(--border);
+    border-bottom: 5px dotted var(--border);
 }
 
 
@@ -87,7 +85,7 @@ aside p {
 /* Class Selectors */
 .box {
     margin: 1rem;
-    border: 5px dotted var(--aside-border-color);
+    border: 5px dotted var(--border);
     padding: 1rem;
     color: var(--box-text-color);
     background-color: var(--aside-background-color);  
