@@ -8,14 +8,14 @@
     --nav-background-color: darkblue;
     --nav-border-bottom: goldenrod;
     --nav-text-color: skyblue;
-    --aside-background-color: darkblue;
-    --aside-text-color: skyblue;
+    --aside-background-color: lightblue;
+    --aside-text-color: black;
     --aside-border-color: goldenrod;
     --footer-border-top: goldenrod;
     --text-color: black;
     --main-background-color: white;
     --box-shadow-color: gray;
-    --box-text-color: skyblue;
+    --box-text-color: black;
 }
 
 nav {
@@ -50,7 +50,6 @@ main img {
 
 p {
     padding: 0;
-    color: var(--text-color);
 }
 
 main {
@@ -67,7 +66,7 @@ aside {
 
 aside h2 {
     position: absolute;
-    top: 120px;
+    top: 155px;
     right: 60px;
     color: lightslategray
 }
@@ -82,17 +81,14 @@ aside img {
 
 aside p {
     margin-top: 2rem;
-    border-top: 5px dotted var(--footer-border-top);
     text-align: center;
-    color: var(--text-color);
-    background-color: var(--main-background-color);
 }
 
 /* Class Selectors */
-.box p {
+.box {
     margin: 1rem;
     border: 5px dotted var(--aside-border-color);
     padding: 1rem;
-    color: var(--box-text-color); /*skyblue text inside box*/
+    color: var(--box-text-color);
     background-color: var(--aside-background-color);  
 }
