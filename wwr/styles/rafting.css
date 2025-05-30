@@ -14,7 +14,6 @@ header {
     margin: 1rem auto;
     grid-template-columns: 200px 1fr;
     align-items: center;
-
 }
 
 .logo-box img {
@@ -117,7 +116,7 @@ h1 {
     float: right;
     display: block;
     width: 150px;
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: 0;
 }
 
