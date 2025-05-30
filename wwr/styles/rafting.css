@@ -10,6 +10,38 @@
 header {
     background-color: var(--primary-color);
     color: var(--accent1-color);
+    display: grid;
+    margin: 1rem auto;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+
+}
+
+.logo-box img {
+    margin: 0 0.25rem 0 1rem;
+    width: 200px;
+    height: auto;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    font-family: "open sans", sans-serif;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    color: var(--accent2-color);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+
 }
 
 * {
@@ -21,6 +53,7 @@ header {
 body {
     font-family: var(--body-font);
     color: var(--accent2-color);
+    background-color: var(--primary-color);
 }
 
 header, main, footer {
@@ -31,15 +64,12 @@ header, main, footer {
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 .hero {
@@ -55,26 +85,29 @@ nav, p, section, article {
 }
 
 h1 {
+    font-size: 2rem;
+    font-family: "Londrina Shadow", sans-serif;
     position: absolute;
     top: 100px;
     left: 0;
     width: 300px;
     padding: 16px;
     text-align: center;
-    opacity: 0.8;
-    background-color: var(--accent1-color);
+    letter-spacing: 3px;
+    opacity: 0.9;
+    background-color: var(--secondary-color);
     color: var(--primary-color);
 }
 
 article {
     position: absolute;
-    top: 200px;
+    top: 225px;
     left: 0;
-    width: 300px;
-    padding: 16px;
+    width: 400px;
+    padding: 8px;
     text-align: left;
-    opacity: 0.8;
-    background-color: var(--accent1-color);
+    opacity: 1;
+    background-color: var(--secondary-color);
     color: var(--primary-color);
 }
 
@@ -84,4 +117,118 @@ article {
     width: 150px;
     margin-left: auto;
     margin-right: 0;
+}
+
+.history {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    padding: 1rem;
+}
+
+.history h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.history-layout {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.history-layout p {
+    width: 30%;
+}
+
+.history-layout img {
+    width: 300px;
+    height: auto;
+}
+
+.adventures {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    padding: 1rem;
+}
+
+.adventures h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.photo-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.photo-row figure {
+    text-align: center;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.photo-row img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+.photo-row figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
+.photo-row figure:first-of-type {
+    flex: 1 1 24%;
+    max-width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.photo-row figure:not(:first-of-type) {
+    flex: 1 1 18%;
+    max-width: 18%;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+    flex: 1 1 auto;
+    text-align: center;
+    margin: 0;
+}
+
+.socialmedia {
+    right: 1rem;
+    top: 1rem;
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.socialmedia a img {
+    width: 32px;
+    height: auto;
 }
