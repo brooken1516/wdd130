@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML/CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,600&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | Brooke Grandberry | HTML/CSS Quiz</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Basic HTML & CSS Quiz</legend>
+                <div class="questions">
+                    <label for="q1">1. Why do you need CSS? </label>
+                    <input type="text" id="q1" name="q1">
+                </div>
+
+                                
+                <div class="questions">
+                <label for="q2">2. What is your favorite thing to style with CSS, and why? </label>
+                <textarea id="q2" name="q2" rows="6"
+                    placeholder="Font Color, Spacing, Grid, Flex... "></textarea>
+                </div>
+
+                <div class="questions">
+                    <label for="q3">3. If you want options in a vertical row what do you use? </label>
+                    <select id="q3" name="q3">
+                        <option value="" selected disabled>Choose one...</option>
+                        <option value="display: flex; ">display: flex;</option>
+                        <option value="display: grid;">display: grid;</option>
+                        <option value="width and height">width and height</option>
+                        <option value="align-items">align-items</option>
+                    </select>
+                </div>
+
+                <div class="questions">
+                    <label for="q4">4. Which image file size is generally best for web performance? (Only type numbers.) </label>
+                    <img src="images/image_size_quiz.png" alt="Four image size options." width="200">
+                    <input type="number" id="q4" name="q4">
+                </div>
+
+            </fieldset>
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+    <footer>
+        <p>©️©2025 | HTML/CSS Example Quiz | Brooke Grandberry</p>
+    </footer>
+</body>
+
+</html>
