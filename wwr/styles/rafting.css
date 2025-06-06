@@ -469,3 +469,14 @@ button:hover {
     margin-right: 3rem;
     white-space: nowrap;
 }
+
+.about-footer .footer-content {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between; 
+    gap: 1rem;         
+}
+.about-footer .socialmedia a img {
+    width: 24px;
+    height: auto;
+}
