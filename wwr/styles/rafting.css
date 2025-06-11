@@ -90,6 +90,7 @@ nav, p, section, article {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
 .hero h1 {
@@ -117,15 +118,16 @@ nav, p, section, article {
     opacity: 1;
     background-color: var(--accent1-color);
     color: var(--primary-color);
-    padding: 30px;
 }
 
 .hero article img {
     float: right;
     display: block;
-    width: 150px;
+    width: 200px;
     margin-left: 20px;
     margin-right: 0;
+    margin-top: -10px;
+    border-radius: 8px;
 }
 
 .history {
@@ -155,6 +157,7 @@ nav, p, section, article {
 .history-layout img {
     width: 300px;
     height: auto;
+    border-radius: 8px;
 }
 
 .adventures {
@@ -385,7 +388,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(80, 77, 77);
+    background-color: var(--accent2-color);
 }
 
 
@@ -462,6 +465,7 @@ button:hover {
 .socialmedia a img {
     width: 32px;
     height: auto;
+    
 }
 
 .wireframe_link {
@@ -470,13 +474,133 @@ button:hover {
     white-space: nowrap;
 }
 
-.about-footer .footer-content {
+.about_footer .footer_content {
     display: flex;
     align-items: center;  
     justify-content: space-between; 
     gap: 1rem;         
 }
-.about-footer .socialmedia a img {
+.about_footer .socialmedia a img {
     width: 24px;
     height: auto;
 }
+
+/* Index CSS Starting HERE: */
+
+.hero_index {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.hero_index img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.hero_index h1 {
+    position: absolute;
+    top: 20px;
+    max-width: 840px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 16px;
+    text-align: center;
+    letter-spacing: 3px;
+    opacity: 0.9;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+.page_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: .5rem;
+}
+
+.left_column, .photo_column {
+    height: 100%;
+}
+
+.sign_up, .call_action {
+    grid-column: 1;
+}
+
+.photo_column {
+    grid-column: 2;
+}
+
+.left_column {
+    background: var(--accent2-color);
+    margin: 1rem;
+}
+
+.sign_up, .photo_column {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    margin: 1rem;
+    background-color: var(--accent2-color);
+}
+
+.memories button {
+    margin: 1rem auto;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    border: none;
+    font-size: 1.5rem;
+    width: 200px;
+    border-radius: 1rem;
+    padding: .5rem;
+    justify-self: center;
+}
+
+.memories button:hover {
+    background-color: var(--accent2-color);
+    cursor: pointer;
+}
+
+
+.photo_column h2 {
+    grid-column: 2;
+    text-align: center;
+    margin-bottom: .5rem;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    letter-spacing: 3px;
+    font-size: 2rem;
+}
+
+.more_info {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+}
+
+.more_info figure {
+    margin: 0;
+    text-align: center;
+}
+
+.more_info img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+.more_info figcaption {
+    margin-top: .5rem;
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+
