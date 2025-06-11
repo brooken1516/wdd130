@@ -540,7 +540,7 @@ button:hover {
     margin: 1rem;
 }
 
-.sign_up, .photo_column {
+.sign_up, .call_action, .photo_column {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: start;
