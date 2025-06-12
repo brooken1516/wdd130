@@ -1,3 +1,4 @@
+/* About Us Starts HERE: */
 :root {
     --primary-color: #301a4b; /*Russian Violet*/
     --secondary-color: #6db1bf; /*Moonstone*/
@@ -217,7 +218,7 @@ nav, p, section, article {
 }
 
 
-/* Contact Form: */
+/* Contact Form Starts HERE: */
 .employees {
     background-color: var(--accent2-color);
     color: var(--primary-color);
@@ -235,7 +236,7 @@ nav, p, section, article {
     text-align: center;
 }
 
-.photo-employees {
+.photo_employees {
     display: flex;
     justify-content: space-around;
     align-items: stretch;
@@ -243,7 +244,7 @@ nav, p, section, article {
     gap: 1rem;
 }
 
-.photo-employees figure {
+.photo_employees figure {
     text-align: center;
     margin: 0;
     flex-shrink: 0;
@@ -252,7 +253,7 @@ nav, p, section, article {
     justify-content: center;
 }
 
-.photo-employees img {
+.photo_employees img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
@@ -260,19 +261,14 @@ nav, p, section, article {
     margin: 0 auto;
 }
 
-.photo-employees figcaption {
+.photo_employees figcaption {
     margin-top: 0.5rem;
     font-size: 0.9rem;
     font-weight: 800;
     color: var(--primary-color);
 }
 
-.photo-employees figure:first-of-type {
-    flex: 1 1 26%;
-    max-width: 26%;
-}
-
-.photo-employees figure:not(:first-of-type) {
+.photo_employees figure:first-of-type, .photo_employees figure:not(:first-of-type) {
     flex: 1 1 26%;
     max-width: 26%;
 }
@@ -332,7 +328,6 @@ iframe {
 }
 
 form {
-    width: 810px;
     width: 100%;
     margin: 0 auto;
     padding: 1rem;
@@ -604,3 +599,154 @@ button:hover {
 }
 
 
+/* TRIPS CSS Starts Here: */
+
+.page_setup {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    align-items: stretch;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: .2rem;
+}
+
+.left_column, .right_column {
+    height: 100%;
+}
+
+.sign_up { 
+    grid-column: 1;
+}
+
+.right_column {
+    grid-column: 2;
+}
+
+.left_column {
+    background: var(--accent1-color);
+    margin: 1rem;
+}
+
+.sign_up, .call_action, .right_column {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    margin: 1rem;
+    background-color: var(--accent2-color);
+}
+
+.right_column h2 {
+    text-align: center;
+    margin-bottom: .5rem;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    letter-spacing: 3px;
+    font-size: 2rem;
+    padding: 10px;
+    margin: .8rem;
+}
+
+
+        /* Start of table */
+table {
+    border-collapse: collapse;
+    border: 2px solid var(--primary-color);
+    font-family: var(--body-font);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin: .5rem;
+}
+
+caption {
+    caption-side: top;
+    margin: .5rem;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2rem;
+
+}
+
+thead,
+tfoot {
+    background-color: var(--accent2-color);
+}
+
+th,
+td {
+    border: 1px solid var(--primary-color);
+    padding: 8px 10px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+td:last-of-type {
+    text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+    background-color: whitesmoke;
+}
+
+tbody > tr:nth-of-type(odd) {
+    background-color: lightgray;
+}
+
+tfoot th {
+    text-align: left;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+        /* End of table */
+
+
+.photo_center {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.photo_center img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.trip_info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.trip_info figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.trip_info img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.trip_info figcaption {
+    max-width: 300px;
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-align: left;
+}
+
+.photo_right {
+    flex-direction: row-reverse;
+}
